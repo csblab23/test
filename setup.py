@@ -38,7 +38,6 @@ setup(
         "typer",
         "rich",
         "rpy2",
-        "onclass @ git+https://github.com/wangshenguiuc/OnClass.git"
     ],
     extras_require={
         "copykat": [
