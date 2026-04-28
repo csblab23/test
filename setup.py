@@ -27,7 +27,7 @@ setup(
         # ✅ core flexible deps (force modern compatible versions)
         "numpy>=1.23",
         "pandas",
-        "scikit-learn>=1.2",
+        "scikit-learn",
         "typer",
         "rich",
         "GEOparse",
