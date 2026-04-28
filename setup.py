@@ -6,7 +6,6 @@ setup(
     description="Single-cell Antigen Ranking Tool",
     author="CSB LAB",
     packages=find_packages(include=["SCART", "SCART.*"]),
-    python_requires=">=3.9",
     include_package_data=True,
     package_data={
         "SCART": [
