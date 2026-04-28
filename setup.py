@@ -22,20 +22,29 @@ setup(
         ]
     },
     zip_safe=False,
+
     install_requires=[
-        "scanpy==1.9.3",
-        "geofetch",
-        "GEOparse",
-        "popv==0.4.2",
-        "scvi-tools",
+        # ✅ core flexible deps
         "numpy",
         "pandas",
         "scikit-learn",
-        "torch",
-        "tensorflow",
-        "deap==1.4",
         "typer",
         "rich",
-        "rpy2>=3.5,<3.6",
-    ]
+        "GEOparse",
+        "geofetch",
+
+        # ✅ pinned (as requested)
+        "popv==0.4.2",
+        "deap==1.4",
+        "scipy==1.13.1",
+
+        # ✅ heavy deps (still required, but not pinned)
+        "scanpy",
+        "scvi-tools",
+        "torch",
+        "tensorflow",
+
+        # ✅ keep rpy2 flexible
+        "rpy2>=3.5"
+    ],
 )
