@@ -45,6 +45,6 @@ setup(
         "tensorflow",
 
         # ✅ keep rpy2 flexible
-        "rpy2>=3.5"
+        "rpy2"
     ],
 )
