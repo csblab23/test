@@ -42,7 +42,6 @@ setup(
         "scanpy",
         "scvi-tools",
         "torch",
-        "tensorflow",
 
         # ✅ keep rpy2 flexible
         "rpy2"
