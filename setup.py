@@ -37,11 +37,6 @@ setup(
         "deap==1.4",
         "typer",
         "rich",
-        "rpy2",
-    ],
-    extras_require={
-        "copykat": [
-            "rpy2",
-        ]
-    }
+        "rpy2>=3.5,<3.6",
+    ]
 )
