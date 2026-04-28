@@ -24,10 +24,10 @@ setup(
     zip_safe=False,
 
     install_requires=[
-        # ✅ core flexible deps
-        "numpy",
-        "pandas",
-        "scikit-learn",
+        # ✅ core flexible deps (force modern compatible versions)
+        "numpy>=1.23",
+        "pandas>=2.2",              # 🔥 fix: avoid pandas 1.5.3 build failure
+        "scikit-learn>=1.2",
         "typer",
         "rich",
         "GEOparse",
@@ -36,14 +36,14 @@ setup(
         # ✅ pinned (as requested)
         "popv==0.4.2",
         "deap==1.4",
-        "scipy>=1.10",   # ✅ relaxed
+        "scipy>=1.10",
 
-        # ✅ heavy deps (still required, but not pinned)
-        "scanpy",
+        # ✅ heavy deps (no strict pinning)
+        "scanpy>=1.9",
         "scvi-tools",
         "torch",
 
-        # ✅ keep rpy2 flexible
-        "rpy2"
+        # ✅ rpy2 (avoid breaking builds)
+        "rpy2>=3.5"
     ],
 )
