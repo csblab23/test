@@ -26,7 +26,7 @@ setup(
     install_requires=[
         # ✅ core flexible deps (force modern compatible versions)
         "numpy>=1.23",
-        "pandas>=2.2",              # 🔥 fix: avoid pandas 1.5.3 build failure
+        "pandas",
         "scikit-learn>=1.2",
         "typer",
         "rich",
