@@ -36,7 +36,7 @@ setup(
         # ✅ pinned (as requested)
         "popv==0.4.2",
         "deap==1.4",
-        "scipy==1.13.1",
+        "scipy>=1.10",   # ✅ relaxed
 
         # ✅ heavy deps (still required, but not pinned)
         "scanpy",
